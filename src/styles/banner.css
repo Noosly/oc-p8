@@ -1,0 +1,28 @@
+/* In your CSS or SCSS file */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 100px;
+}
+.banner__navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.banner__link {
+  color: #FF6060;
+  align: Right;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: right;
+  text-decoration: none;
+}
+.banner__link--active {
+  text-decoration: overline;
+}/*# sourceMappingURL=banner.css.map */
