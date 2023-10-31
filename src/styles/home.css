@@ -1,1 +1,13 @@
-/*# sourceMappingURL=home.css.map */
+.page-home {
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+.gallery {
+  background-color: #F6F6F6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 45px;
+  padding: 45px;
+  border-radius: 25px;
+}/*# sourceMappingURL=home.css.map */

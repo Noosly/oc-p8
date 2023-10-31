@@ -1,7 +1,7 @@
 import React from 'react'
 import Banner from '../components/Banner'
 import Card from '../components/Card'
-import title_bg_image from '../assets/MaskGroup.png'
+import '../styles/home.css'
 import banner_bg_image from '../assets/bg_home.png'
 import Footer from '../components/Footer'
 
@@ -10,7 +10,6 @@ export default function Home() {
     <div className="page-home"> 
       <header>
         <Banner title="Chez vous, partout ailleurs" image={banner_bg_image} />
-
       </header>
       
       
