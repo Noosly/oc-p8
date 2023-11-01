@@ -1,4 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700")
+$dropdownlist-color: #FF6060
+
 .dropdownlist-header
-    background-color: black
+    border-radius: 5px
+    font-family: Montserrat
+    font-size: 24px
+    font-weight: 500
+    line-height: 34px
+    letter-spacing: 0em
+    text-align: left
+    background-color: $dropdownlist-color
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+
     &__text
         color: white
+.dropdownlist-content
+    &__text
+        font-family: Montserrat
+        font-size: 18px
+        font-weight: 400
+        line-height: 26px
+        letter-spacing: 0em
+        text-align: left
+        color: $dropdownlist-color

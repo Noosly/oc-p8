@@ -12,13 +12,14 @@ export default function Apropos() {
 
       </header>
       <main>
-        <DropDownList headerText="Header" contentText="Content" />
-        <h2>DropDown</h2>
-        <h2>DropDown</h2>
-        <h2 >DropDown</h2>
-        <h2>DropDown</h2>
-        <h2>DropDown</h2>
-        <h2>DropDown</h2>
+        <DropDownList headerText="Fiabilité" contentText="Les annonces postées sur Kasa garantissent une fiabilité totale. 
+        Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." />
+        <DropDownList headerText="Respect" contentText="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout 
+        comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />
+        <DropDownList headerText="Header3" contentText="Content" />
+        <DropDownList headerText="Header4" contentText="Content" />
+        <DropDownList headerText="Header5" contentText="Content" />
+        <DropDownList headerText="Header6" contentText="Content" />
 
       </main>
       <footer>

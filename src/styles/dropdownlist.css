@@ -1,6 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 .dropdownlist-header {
-  background-color: black;
+  border-radius: 5px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  background-color: #FF6060;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .dropdownlist-header__text {
   color: white;
+}
+
+.dropdownlist-content__text {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FF6060;
 }/*# sourceMappingURL=dropdownlist.css.map */
