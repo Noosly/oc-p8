@@ -3,10 +3,23 @@ import arrow from '../assets/arrow.png'
 import '../styles/dropdownlist.css'
 
 export default function DropDownList({headerText, contentText}) {
+  
+  let arrow_rotation = 0;
   const show_hide = (e)=>{
     const header_btn = document.querySelector('.dropdownlist-header__image')
-    alert(`function: show_hide event: ${e}`)
-    header_btn.style.transform = 'rotate(180deg)'
+  const content = document.querySelector('.dropdownlist-content')
+    //e.preventDefault()
+    if(arrow_rotation == 0 ){
+        arrow_rotation = 180
+        header_btn.style.transform = `rotate(${arrow_rotation}deg)`
+        content.style.visibility = 'hidden'
+
+    }else{
+        arrow_rotation = 0 
+        header_btn.style.transform = `rotate(${arrow_rotation}deg)`
+        content.style.visibility = 'visible'
+    }   
+    
   }
   return (
     <div className='component-dropdownlist'>

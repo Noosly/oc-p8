@@ -12,7 +12,7 @@ export default function Apropos() {
 
       </header>
       <main>
-        <DropDownList headerText="Header" contextText="Content" />
+        <DropDownList headerText="Header" contentText="Content" />
         <h2>DropDown</h2>
         <h2>DropDown</h2>
         <h2 >DropDown</h2>
