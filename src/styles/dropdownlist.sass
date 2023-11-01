@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700")
 $dropdownlist-color: #FF6060
-
+.component-dropdownlist
+    margin-left: 150px
+    margin-right: 150px
 .dropdownlist-header
     border-radius: 5px
     font-family: Montserrat
@@ -13,10 +15,11 @@ $dropdownlist-color: #FF6060
     display: flex
     flex-direction: row
     justify-content: space-between
-
-
     &__text
         color: white
+        padding: 10px
+    &__image
+        padding: 10px
 .dropdownlist-content
     &__text
         font-family: Montserrat
@@ -26,3 +29,6 @@ $dropdownlist-color: #FF6060
         letter-spacing: 0em
         text-align: left
         color: $dropdownlist-color
+        padding: 10px
+        
+        

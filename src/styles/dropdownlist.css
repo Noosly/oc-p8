@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+.component-dropdownlist {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
 .dropdownlist-header {
   border-radius: 5px;
   font-family: Montserrat;
@@ -14,6 +19,10 @@
 }
 .dropdownlist-header__text {
   color: white;
+  padding: 10px;
+}
+.dropdownlist-header__image {
+  padding: 10px;
 }
 
 .dropdownlist-content__text {
@@ -24,4 +33,5 @@
   letter-spacing: 0em;
   text-align: left;
   color: #FF6060;
+  padding: 10px;
 }/*# sourceMappingURL=dropdownlist.css.map */

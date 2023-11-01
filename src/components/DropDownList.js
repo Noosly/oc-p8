@@ -23,7 +23,7 @@ export default function DropDownList({headerText, contentText}) {
         <div className='dropdownlist-header'>
             <div className='dropdownlist-header__text'>{headerText}</div>
             <div className='dropdownlist-header__image'>
-            <img src={arrow} alt ="Flèche Haut/Bas" onClick={show_hide}/>
+              <img src={arrow} alt ="Flèche Haut/Bas" onClick={show_hide}/>
             </div>
             
             
