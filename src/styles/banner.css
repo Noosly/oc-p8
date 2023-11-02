@@ -3,40 +3,6 @@
   padding: 10px;
 }
 
-.menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.menu__navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 30px;
-}
-.menu__link {
-  color: #FF6060;
-  align: Right;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 34px;
-  letter-spacing: 0em;
-  text-align: right;
-  text-decoration: none;
-}
-.menu__link--active {
-  color: #FF6060;
-  align: Right;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 34px;
-  letter-spacing: 0em;
-  text-align: right;
-  text-decoration: underline;
-}
-
 .banner {
   position: relative;
   width: 100%;

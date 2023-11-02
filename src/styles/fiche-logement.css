@@ -1,0 +1,19 @@
+.page-fiche-logement {
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logement {
+  display: flex;
+  flex-direction: Column;
+}
+
+.user {
+  display: flex;
+  flex-direction: Column;
+}/*# sourceMappingURL=fiche-logement.css.map */
