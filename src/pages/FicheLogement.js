@@ -31,9 +31,9 @@ export default function FicheLogement() {
           <div className='flex-row'>            
           </div>        
         </div>
-        <div className='flex-row'>
-          <DropDownList headerText='Description' contentText={description} className='flex-row__drop-down-list'/>
-          <DropDownList headerText='Equipements' contentText={equipments} className='flex-row__drop-down-list'/>
+        <div className='details'>
+          <DropDownList headerText='Description' contentText={description}/>
+          <DropDownList headerText='Equipements' contentText={equipments} className='details__dropdownlist'/>
         </div>
       </main>
       <footer>

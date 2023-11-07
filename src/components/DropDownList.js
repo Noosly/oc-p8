@@ -2,24 +2,11 @@ import React, {useState} from 'react'
 import arrow from '../assets/arrow.png'
 import '../styles/dropdownlist.css'
 
-export default function DropDownList({headerText, contentText}) {  
-  const [open, setOpen] = useState(true);
-  //let arrow_rotation = 0;
+export default function DropDownList({headerText, contentText}) {
+    
+  const [open, setOpen] = useState(false);
   const show_hide = (e)=>{
     setOpen(!open);
-    /*const header_btn = document.querySelector('.dropdownlist-header__image')
-    const content = document.querySelector('.dropdownlist-content')
-    if(arrow_rotation == 0 ){
-        arrow_rotation = 180
-        header_btn.style.transform = `rotate(${arrow_rotation}deg)`
-        content.style.display = 'none'
-    }else{
-        arrow_rotation = 0 
-        header_btn.style.transform = `rotate(${arrow_rotation}deg)`
-        content.style.display = 'block'
-    }  
-    */
-
   }
   return (
     <div className='component-dropdownlist'>
