@@ -4,13 +4,11 @@ import Menu from '../components/Menu'
 import Slider from '../components/Slider'
 import '../styles/fiche-logement.css'
 import DropDownList from '../components/DropDownList'
-
 export default function FicheLogement() {
   let description = 'Description du logement de la fiche logement'
   let equipments = 'Liste des équipements disponibles dans le logement'
   return (
-    <div className='page-fiche-logement'>
-           
+    <div className='page-fiche-logement'>           
       <header>
         <Menu className='menu'/>
       </header>
@@ -37,12 +35,9 @@ export default function FicheLogement() {
           <DropDownList headerText='Description' contentText={description} className='flex-row__drop-down-list'/>
           <DropDownList headerText='Equipements' contentText={equipments} className='flex-row__drop-down-list'/>
         </div>
-
-
       </main>
       <footer>
         <Footer/>
-
       </footer>
     </div>
   )

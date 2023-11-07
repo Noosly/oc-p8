@@ -9,7 +9,6 @@ export default function Apropos() {
     <div className='page-apropos'>
       <header>
         <Banner title="" image={banner_bg_image} />
-
       </header>
       <main>
         <DropDownList headerText="Fiabilité" contentText="Les annonces postées sur Kasa garantissent une fiabilité totale. 
@@ -22,7 +21,6 @@ export default function Apropos() {
         les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien 
         à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également
         des ateliers sur la sécurité domestique pour nos hôtes." />
-
       </main>
       <footer>
         <Footer />

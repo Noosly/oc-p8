@@ -1,4 +1,28 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@keyframes show-content {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+    height: 0%;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    height: 100%;
+  }
+}
+@keyframes hide-content {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+    height: 100%;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+    height: 0%;
+  }
+}
 .component-dropdownlist {
   margin-left: 150px;
   margin-right: 150px;
@@ -16,22 +40,43 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .dropdownlist-header__text {
   color: white;
-  padding: 10px;
 }
 .dropdownlist-header__image {
   padding: 10px;
 }
+.dropdownlist-header__image--opened {
+  transform: rotate(0deg);
+  transition: all 1s;
+}
+.dropdownlist-header__image--closed {
+  transform: rotate(180deg);
+  transition: all 1s;
+}
 
-.dropdownlist-content__text {
+.dropdownlist-content {
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 400;
-  line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
   color: #FF6060;
   padding: 10px;
+}
+.dropdownlist-content--opened {
+  animation-name: show-content;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+.dropdownlist-content--closed {
+  display: none;
+  animation-name: hide-content;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
 }/*# sourceMappingURL=dropdownlist.css.map */

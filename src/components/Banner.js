@@ -5,10 +5,6 @@ import '../styles/banner.css'
 import Menu from './Menu'
 
 export default function Banner({title, image}) {
-  const location = useLocation();
-  const isLinkActive = (to) => { 
-    return location.pathname === to;  
-  };
   return (
     <div className='component-banner'>
       <Menu />  
