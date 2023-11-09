@@ -1,0 +1,19 @@
+.slider {
+  position: relative;
+  width: 100%;
+}
+.slider__cover {
+  width: 100%;
+  aspect-ratio: 3/1;
+  border-radius: 25px;
+}
+.slider__arrow-left {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+}
+.slider__arrow-right {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}/*# sourceMappingURL=slider.css.map */

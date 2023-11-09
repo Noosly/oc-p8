@@ -1,6 +1,6 @@
 .page-home {
-  padding-right: 200px;
-  padding-left: 200px;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .gallery {
@@ -12,5 +12,4 @@
   border-radius: 25px;
   margin-top: 45px;
   margin-bottom: 45px;
-  max-width: 100%;
 }/*# sourceMappingURL=home.css.map */

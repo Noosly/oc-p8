@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 .card {
-  position: relative;
   text-decoration: none;
 }
 .card__cover {
