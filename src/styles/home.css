@@ -12,4 +12,11 @@
   border-radius: 25px;
   margin-top: 45px;
   margin-bottom: 45px;
+  margin-left: 0;
+  marging-right: 0;
+}
+
+main {
+  margin-left: 0;
+  marging-right: 0;
 }/*# sourceMappingURL=home.css.map */
