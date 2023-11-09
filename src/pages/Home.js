@@ -20,8 +20,7 @@ export default function Home() {
             logementsJsonFile.map(item => (
               <Card id={item.id} title={item.title} cover={item.cover} />
             ))
-          }
-          
+          }          
         </div>
       </main>
       <footer>

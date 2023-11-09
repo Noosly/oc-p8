@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/card.css'
+import logementsJsonFile from '../logements.json'
 
 export default function Card({id, title, cover}) {
   const  card_link = `/FicheLogement/${id}`     
