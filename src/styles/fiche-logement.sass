@@ -1,14 +1,12 @@
+$title-color: #FF6060
 .page-fiche-logement
     padding-right: 5%
     padding-left: 5%
-     
 
 .flex-row
     display: flex
     flex-direction: row
-    justify-content: space-between
-      
-    
+    justify-content: space-between  
     
 .details
     display: flex
@@ -16,18 +14,51 @@
     justify-content: center
     gap: 50px
     .component-dropdownlist
-        width: 50%
-
-
-
-
-       
+        width: 50%      
         
 .logement
-        display: flex
-        flex-direction: Column
+    display: flex
+    flex-direction: Column
+    &__title
+        font-family: Montserrat
+        font-size: 36px
+        font-weight: 500
+        letter-spacing: 0em
+        text-align: left
+        color: $title-color
+    &__location
+        font-family: Montserrat
+        font-size: 18px
+        font-weight: 500
+        line-height: 26px
+        letter-spacing: 0em
+        text-align: left
+        color: $title-color
 
 .user
-        display: flex
-        flex-direction: Column
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    &__full-name
+        width: 93px
+        height: 52px
+        //top: 608px
+        //left: 1170px
+        font-family: Montserrat
+        font-size: 18px
+        font-weight: 500
+        line-height: 26px
+        letter-spacing: 0em
+        text-align: right
+        color: $title-color
+        padding-right: 15px
+    &__avatar
+        width: 64px
+        height: 64px
+        //top: 602px
+        //left: 1273px
+        border-radius: 50%
+
+
+
 

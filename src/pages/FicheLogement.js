@@ -6,6 +6,8 @@ import '../styles/fiche-logement.css'
 import DropDownList from '../components/DropDownList'
 import { useParams } from 'react-router-dom'
 import logementsJsonFile from '../logements.json'
+import Stars from '../components/Stars'
+import Tags from '../components/Tags'
 
 export default function FicheLogement() {
   const params = useParams()
@@ -17,6 +19,10 @@ export default function FicheLogement() {
   let pictures = logementData.pictures
   let title = logementData.title
   let location = logementData.location
+  let fullName = logementData.host.name
+  let avatarPicture = logementData.host.picture
+  let rating = logementData.rating
+  
   return (
     <div className='page-fiche-logement'>           
       <header>
@@ -26,19 +32,21 @@ export default function FicheLogement() {
         <Slider pictures={pictures} />
         <div className='flex-row'>
           <div className='logement'>     
-            <div>{title}</div>       
-            <div>{location}</div>       
+            <div className='logement__title'>{title}</div>       
+            <div className='logement__location'>{location}</div>       
           </div>
           <div className='user'>  
-            <div>Avatar</div>       
-            <div>Full Name</div>           
+            <div className='user__full-name'>{fullName}</div>       
+            <img className='user__avatar' src={avatarPicture} alt='avatar picture' />         
           </div>        
         </div>
         <div className='flex-row'>
           <div className='flex-row'> 
+            <Tags />
                  
           </div>
-          <div className='flex-row'>            
+          <div className='flex-row'>  
+            <Stars rating={rating} />          
           </div>        
         </div>
         <div className='details'>
