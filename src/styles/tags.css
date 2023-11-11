@@ -1,4 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+.tags-component {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
 .tags-component__tag {
   background-color: #FF6060;
   color: white;
+  margin: 5px;
+  padding: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 25px;
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
 }/*# sourceMappingURL=tags.css.map */

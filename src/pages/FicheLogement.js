@@ -22,6 +22,7 @@ export default function FicheLogement() {
   let fullName = logementData.host.name
   let avatarPicture = logementData.host.picture
   let rating = logementData.rating
+  let tags = logementData.tags
   
   return (
     <div className='page-fiche-logement'>           
@@ -42,7 +43,7 @@ export default function FicheLogement() {
         </div>
         <div className='flex-row'>
           <div className='flex-row'> 
-            <Tags />
+            <Tags tags={tags}/>
                  
           </div>
           <div className='flex-row'>  
