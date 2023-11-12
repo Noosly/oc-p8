@@ -6,4 +6,10 @@
   margin-right: 100px;
   margin-left: 100px;
   margin-top: 25px;
+}
+@media screen and (max-width: 640px) {
+  .page-apropos main {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }/*# sourceMappingURL=apropos.css.map */

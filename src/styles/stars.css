@@ -1,6 +1,9 @@
 .stars-component {
   padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 .stars-component__star {
-  padding: 5px;
+  padding: 1px;
 }/*# sourceMappingURL=stars.css.map */

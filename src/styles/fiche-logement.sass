@@ -1,24 +1,33 @@
 $title-color: #FF6060
+$mobile-breakpoint: 640px
 .page-fiche-logement
     padding-right: 5%
     padding-left: 5%
 
-.flex-row
+.logement-box
     display: flex
     flex-direction: row
     justify-content: space-between  
+
+.user-box
+    display: flex
+    flex-direction: column
+    justify-content: space-between  
     
+
 .details
     display: flex
     flex-direction: row
-    justify-content: center
+    justify-content: space-between
     gap: 50px
     .component-dropdownlist
-        width: 50%      
+        width: 50%  
+
+
         
 .logement
     display: flex
-    flex-direction: Column
+    flex-direction: column
     &__title
         font-family: Montserrat
         font-size: 36px
@@ -26,6 +35,7 @@ $title-color: #FF6060
         letter-spacing: 0em
         text-align: left
         color: $title-color
+        
     &__location
         font-family: Montserrat
         font-size: 18px
@@ -38,12 +48,10 @@ $title-color: #FF6060
 .user
     display: flex
     flex-direction: row
-    justify-content: space-between
+    justify-content: flex-end
     &__full-name
         width: 93px
         height: 52px
-        //top: 608px
-        //left: 1170px
         font-family: Montserrat
         font-size: 18px
         font-weight: 500
@@ -62,3 +70,28 @@ $title-color: #FF6060
 
 
 
+@media screen and (max-width: $mobile-breakpoint)
+    .details
+        display: flex
+        flex-direction: column   
+        gap: 0
+        .component-dropdownlist
+            width: 100% 
+    .logement-box
+        display: flex
+        flex-direction: column
+        
+    
+    .user
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        &__full-name
+            text-align: left
+    .stars-component
+        padding: 0px    
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+    
+    

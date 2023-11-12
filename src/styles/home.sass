@@ -1,4 +1,5 @@
 $gallery-bg-color: #F6F6F6
+$mobile-breakpoint: 640px
 
 .page-home
     padding-right: 5% //200px
@@ -14,6 +15,12 @@ $gallery-bg-color: #F6F6F6
     margin-bottom: 45px
     margin-left: 0
     marging-right: 0
+
+@media screen and (max-width: $mobile-breakpoint)
+    .gallery
+        grid-template-columns: 1fr
+        
+
 
 main
     margin-left: 0

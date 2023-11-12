@@ -8,10 +8,10 @@ import '../styles/stars.css'
 export default function Stars({rating}) {
   const maxRating = 5
   let stars = []
-  for(let i = 1; i <= rating; i = i +1){
+  for(let i = 0; i < rating; i = i + 1){
     stars.push(fullStar)
   }
-  for(let i = rating + 1; i < maxRating; i = i +1){
+  for(let i = rating ; i < maxRating; i = i +1){
     stars.push(emptytStar)
   }
   return (

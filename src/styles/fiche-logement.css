@@ -3,16 +3,22 @@
   padding-left: 5%;
 }
 
-.flex-row {
+.logement-box {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.user-box {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .details {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   gap: 50px;
 }
 .details .component-dropdownlist {
@@ -21,7 +27,7 @@
 
 .logement {
   display: flex;
-  flex-direction: Column;
+  flex-direction: column;
 }
 .logement__title {
   font-family: Montserrat;
@@ -44,7 +50,7 @@
 .user {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 .user__full-name {
   width: 93px;
@@ -62,4 +68,33 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 640px) {
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .details .component-dropdownlist {
+    width: 100%;
+  }
+  .logement-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .user {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .user__full-name {
+    text-align: left;
+  }
+  .stars-component {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }/*# sourceMappingURL=fiche-logement.css.map */

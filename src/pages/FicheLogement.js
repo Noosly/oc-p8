@@ -31,25 +31,25 @@ export default function FicheLogement() {
       </header>
       <main>
         <Slider pictures={pictures} />
-        <div className='flex-row'>
+        <div className='logement-box'>
           <div className='logement'>     
             <div className='logement__title'>{title}</div>       
-            <div className='logement__location'>{location}</div>       
+            <div className='logement__location'>{location}</div>  
+                
           </div>
-          <div className='user'>  
-            <div className='user__full-name'>{fullName}</div>       
-            <img className='user__avatar' src={avatarPicture} alt='avatar picture' />         
-          </div>        
-        </div>
-        <div className='flex-row'>
-          <div className='flex-row'> 
-            <Tags tags={tags}/>
-                 
+          
+          <div className='user-box'>
+            <div className='user'>  
+              <div className='user__full-name'>{fullName}</div>       
+              <img className='user__avatar' src={avatarPicture} alt='avatar picture' />         
+            </div> 
+            <Stars rating={rating} />              
           </div>
-          <div className='flex-row'>  
-            <Stars rating={rating} />          
-          </div>        
+          
+                  
         </div>
+        <Tags tags={tags}/> 
+        
         <div className='details'>
           <DropDownList headerText='Description' contentText={description}/>
           <DropDownList headerText='Equipements' contentText={equipments} className='details__dropdownlist'/>

@@ -16,6 +16,11 @@
   marging-right: 0;
 }
 
+@media screen and (max-width: 640px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
 main {
   margin-left: 0;
   marging-right: 0;
