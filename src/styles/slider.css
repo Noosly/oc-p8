@@ -6,14 +6,16 @@
   width: 100%;
   aspect-ratio: 3/1;
   border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .slider__arrow-left {
   position: absolute;
   left: 10px;
-  top: 50%;
+  top: 40%;
 }
 .slider__arrow-right {
   position: absolute;
   right: 10px;
-  top: 50%;
+  top: 40%;
 }/*# sourceMappingURL=slider.css.map */

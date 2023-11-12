@@ -2,20 +2,19 @@ import React from 'react'
 import arrow_left  from '../assets/arrow_left.png'
 import arrow_right from  '../assets/arrow_right.png'
 import '../styles/slider.css'
-import test1 from '../assets/bg_home.png'
 import { useState } from 'react'
 
 export default function Slider({pictures}) {
   let [index, setIndex] = useState(0)
   const nextSlide = (e) =>{ 
-    if(index == pictures.length - 1){
+    if(index === pictures.length - 1){
       setIndex(0)
     }else{
       setIndex(index + 1)
     }    
   }
   const previousSlide = (e) =>{
-    if(index == 0){
+    if(index === 0){
       setIndex(pictures.length - 1)
     }else{
       setIndex(index - 1)
