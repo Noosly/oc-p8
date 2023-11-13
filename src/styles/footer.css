@@ -7,4 +7,11 @@
 }
 .footer__text {
   color: white;
+}
+
+@media screen and (max-width: 640px) {
+  .footer__text {
+    width: 133.59px;
+    margin: auto;
+  }
 }/*# sourceMappingURL=footer.css.map */

@@ -8,11 +8,16 @@ import { useParams } from 'react-router-dom'
 import logementsJsonFile from '../logements.json'
 import Stars from '../components/Stars'
 import Tags from '../components/Tags'
+import NotFound from './NotFound'
 
 export default function FicheLogement() {
   const params = useParams()
   const idLogement = params.id;
   const logementData = logementsJsonFile.filter((data) => data.id === idLogement)[0]
+
+  if(logementData === undefined){
+    return (<NotFound />)
+  }
   
   let description = logementData.description //'Description du logement de la fiche logement'
   let equipments = logementData.equipments //'Liste des équipements disponibles dans le logement'
