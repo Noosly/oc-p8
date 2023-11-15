@@ -4,19 +4,17 @@ $menu-color: #FF6060
 $banner-text-color: #FFFFFF
 
 
-.component-banner
+//.component-banner
     //padding: 10px
 
 .banner
     position: relative
     width: 100%
-    height: 223px
     &__image        
         width: 100%
         height: 223px
         border-radius: 25px
-        border-radius: 25px
-        opacity: 0.3px        
+        opacity: 0.3px    
     &__text   
         position: absolute
         top: 50%
@@ -29,6 +27,21 @@ $banner-text-color: #FFFFFF
         line-height: 68px
         letter-spacing: 0em
         text-align: left
+
+.banner:after
+    position: absolute
+    display: block
+    content: ''
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+
+
+    background: rgba(0, 0, 0, 0.4)
+
+    mix-blend-mode: multiply
+    border-radius: 25px
 
 
 
