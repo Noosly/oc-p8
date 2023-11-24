@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700')
-
+$mobile-breakpoint: 640px
 $menu-color: #FF6060
 $banner-text-color: #FFFFFF
 .menu
@@ -31,3 +31,8 @@ $banner-text-color: #FFFFFF
             letter-spacing: 0em 
             text-align: right
             text-decoration: underline
+
+@media screen and (max-width: $mobile-breakpoint)
+    .menu__logo
+        width: 70px
+

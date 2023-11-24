@@ -10,11 +10,11 @@ export default function Menu() {
   };
   return (    
     <div className="menu">
-    <img className="menu__logo" src={logo} alt ="Logo Kasa"></img>
-    <nav className='menu__navbar'>
-        <Link to="/" className={isLinkActive('/')?'menu__link--active':'menu__link'}>Acceuil</Link>
-        <Link to="/Apropos" className={isLinkActive('/Apropos')?'menu__link--active':'menu__link'}>A Propos</Link>
-    </nav> 
+      <img className="menu__logo" src={logo} alt ="Logo Kasa"></img>
+      <nav className='menu__navbar'>
+          <Link to="/" className={isLinkActive('/')?'menu__link--active':'menu__link'}>Acceuil</Link>
+          <Link to="/Apropos" className={isLinkActive('/Apropos')?'menu__link--active':'menu__link'}>A Propos</Link>
+      </nav> 
     </div>     
   )
 }

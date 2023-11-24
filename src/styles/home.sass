@@ -1,5 +1,6 @@
 $gallery-bg-color: #F6F6F6
 $mobile-breakpoint: 640px
+$tablette-breakpoint: 768px
 
 .page-home
     padding-right: 5% //200px
@@ -8,8 +9,8 @@ $mobile-breakpoint: 640px
     background-color: $gallery-bg-color
     display: grid
     grid-template-columns: 1fr 1fr 1fr
-    grid-gap: 45px
-    padding: 45px
+    grid-gap: 25px
+    padding: 25px
     border-radius: 25px
     margin-top: 45px
     margin-bottom: 45px
@@ -23,6 +24,9 @@ main
 @media screen and (max-width: $mobile-breakpoint)
     .gallery
         grid-template-columns: 1fr
+@media screen and (max-width: $tablette-breakpoint)  and (min-width: $mobile-breakpoint)
+    .gallery
+        grid-template-columns: 1fr 1fr
     
     
     

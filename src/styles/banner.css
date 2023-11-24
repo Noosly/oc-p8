@@ -8,6 +8,8 @@
   height: 223px;
   border-radius: 25px;
   opacity: 0.3px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .banner__text {
   position: absolute;
@@ -21,6 +23,8 @@
   line-height: 68px;
   letter-spacing: 0em;
   text-align: left;
+  z-index: 1;
+  text-align: center;
 }
 
 .banner:after {
@@ -34,4 +38,15 @@
   background: rgba(0, 0, 0, 0.4);
   mix-blend-mode: multiply;
   border-radius: 25px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 640px) {
+  .banner__text {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .banner__text {
+    font-size: 25px;
+  }
 }/*# sourceMappingURL=banner.css.map */

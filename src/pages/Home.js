@@ -7,8 +7,6 @@ import Footer from '../components/Footer'
 import logementsJsonFile from '../logements.json'
 
 export default function Home() {
-
-
   return (
     <div className="page-home"> 
       <header>
@@ -26,9 +24,6 @@ export default function Home() {
       <footer>
         <Footer />
       </footer>
-      
-
-      
     </div>
   )
 }
