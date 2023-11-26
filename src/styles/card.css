@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 .card {
+  padding: 45px;
   text-decoration: none;
 }
 .card__cover {
