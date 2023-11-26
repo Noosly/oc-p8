@@ -14,11 +14,9 @@ export default function FicheLogement() {
   const params = useParams()
   const idLogement = params.id;
   const logementData = logementsJsonFile.filter((data) => data.id === idLogement)[0]
-
   if(logementData === undefined){
     return (<NotFound />)
-  }
-  
+  }  
   let description = logementData.description //'Description du logement de la fiche logement'
   let equipments = logementData.equipments //'Liste des équipements disponibles dans le logement'
   let pictures = logementData.pictures
@@ -40,8 +38,7 @@ export default function FicheLogement() {
           <div className='logement'>     
             <div className='logement__title'>{title}</div>       
             <div className='logement__location'>{location}</div>  
-            <Tags tags={tags}/> 
-                
+            <Tags tags={tags}/>                 
           </div>
           
           <div className='user-box'>
@@ -51,12 +48,18 @@ export default function FicheLogement() {
             </div> 
             <Stars rating={rating} />              
           </div>     
-        </div>
-        
-        
+        </div>   
         <div className='details'>
           <DropDownList headerText='Description' contentText={description}/>
-          <DropDownList headerText='Equipements' contentText={equipments} className='details__dropdownlist'/>
+          <DropDownList className='details__dropdownlist' headerText='Equipements' 
+            contentText={
+              <ul>
+                {equipments.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            } 
+          />
         </div>
       </main>
       <footer>

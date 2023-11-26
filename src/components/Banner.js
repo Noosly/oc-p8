@@ -1,6 +1,4 @@
 import React from 'react'
-import {Link, useLocation} from "react-router-dom"
-import logo from '../assets/LOGO.png'
 import '../styles/banner.css'
 import Menu from './Menu'
 

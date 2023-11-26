@@ -15,8 +15,8 @@ export default function Home() {
       <main>        
         <div className='gallery'>
           {
-            logementsJsonFile.map(item => (
-              <Card id={item.id} title={item.title} cover={item.cover} />
+            logementsJsonFile.map((item, index )=> (
+              <Card id={item.id} title={item.title} cover={item.cover} key={index} />
             ))
           }          
         </div>
